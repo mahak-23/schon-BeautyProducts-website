@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+    font-size: 15px;
+}
+footer{
+    background-color:  rgb(34, 34, 34);
+    padding: 0px 0px;
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+.left-column{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+  
+}
+.container2{
+    flex-basis: 48%;
+    /* border: 1px solid red; */
+}
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px 10px 50px;
+
+}
+.second-container{
+    display: flex;
+    margin: 20px 20px 20px 50px;
+}
+.clog img{
+    width: 150px;
+}
+.coloum1{
+    text-align: center;
+}
+.coloum2{
+    margin: 30px 0px 50px;
+}
+.coloum3{
+    margin: 30px 0px 50px;
+}
+.coloum5{
+    margin-left: 145px;
+}
+
+.content-data{
+   margin: 10px;
+    
+}
+.content-data li{
+    list-style: none;
+    padding: 7px 10px;
+    width: fit-content;
+}
+.content-data li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+.coloum2 h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 32px;
+}
+.coloum3 h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 32px;
+}
+.coloum4 h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: antiquewhite;
+    text-align: center;
+}
+.coloum5 h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* -------------container2--------- */
+.container2{
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+.sub-container{
+    display: flex;
+    margin-top: 45px
+}
+.mobile-app{
+    width: fit-content;
+    padding: 10px;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+.experience{
+    padding: 10px;
+    color: aliceblue;
+    font-size: 18px;
+    width: max-content;
+}
+.experience i{
+    color: white;
+    font-size: 20px;
+}
+
+.logo{
+    padding:0 25px;
+}
+.logo img{
+    width: 30%;
+}
+.col1{
+    color: aliceblue;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    padding-top: 13px;
+    margin-right: 90px;
+
+}
+.love i{
+    color: rgb(198, 43, 5);
+}
+.love-icons i{
+    font-size: 20px;
+    color: rgba(255, 110, 77, 0.949);
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.mail-master{
+    margin: 70px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mail{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px ;
+}
+.mail i{
+    font-size: 19px;
+    margin:0 5px 0 5px;
+}
+.form input{
+    background-color: transparent;
+    color: aliceblue;
+    border-style: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.346);
+    margin-right: 20px;
+    
+}
+.btn{
+    background-color: transparent;
+    color: aliceblue;
+    transition: transform 0.3s;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-style: none;
+}
+.btn:hover{
+    background-color: rgb(183, 4, 147);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* ------------footer3------------- */
+.footer3-container1{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+.footer3-container2{
+    display: flex;
+    /* padding: 10px; */
+    justify-content: space-evenly;
+}
+
+.freeShipping-master{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.freeShiping-image{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.freeShiping-image i{
+    font-size: 22px;
+    color: #fc2779;
+    padding: 10px;
+    border-radius: 50%; 
+    border: 2px solid #fc2779;
+}
+.test{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.bottom-text{
+    /* padding: 5px; */
+    color: rgba(240, 248, 255, 0.338);
+}
+
+
+
+
+
+
+/* -------------copyright------------- */
+.f5-content{
+    background-image: linear-gradient(to right,rgba(255, 0, 0, 0.099),rgba(255, 0, 115, 0.941),rgba(255, 0, 0, 0.099));
+    text-align: center;
+    padding: 25px 10px 10px;
+    color: white;
+    font-size: 13px;
+}

@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:white;
+  } */
+/* 
+footer {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+} */
+header{
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: rgb(215, 20, 111);
+}
+a:hover {
+  color: rgb(98, 68, 83);
+ }
+.container {
+  position: relative;
+  height: auto;
+  width: auto;
+} 
+
+.heading {
+  font-size: 20px;
+  color: #001326;
+  letter-spacing: 0rem;
+  font-weight: 300;
+  text-align: left;
+  line-height: initial !important;
+  padding: 1rem 0rem 0rem 0rem;
+  overflow: hidden;
+  margin: 0;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/*  ++++++++++++++++++++++head carousal  slider   ++++++++++++++++++++++++++++++++++++++  */
+
+.head-slider {
+  width: auto;
+  margin: 15px auto;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.mySlides {
+  background: #fff;
+  height: auto;
+  justify-content: center;
+  padding: 5px;
+  /* display: none; */
+  /* flex-shrink: 0; */
+}
+
+/* Next & previous buttons */
+.prevv,
+.nextt {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextt {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevv:hover,
+.nextt:hover {
+  background-color: rgba(88, 82, 82, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
+  background-color: white;
+  border: 1px solid rgb(248, 111, 200);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: rgb(248, 111, 200);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*  ++++++++++++++++++++++++++++ sales banner +++++++++++++++++++++++  */
+
+.sales-container {
+  box-sizing: border-box;
+  margin: 5px;
+  width: auto;
+  max-height: 100px;
+}
+.banner_container {
+  margin: 5px auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.sales-container .image-box-b {
+  /* flex: 50%; */
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.sales-container .image-box-b img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*  ++++++++++++++++++++++++ essentials carousal +++++++++++++++++++++++++++++++++   */
+.carousel-container {
+  width: 1250px;
+  margin: 10px auto;
+  min-height: 200px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-container {
+    width: 85%;
+  }
+}
+.carousel-container .carousel-inner {
+  overflow: hidden;
+}
+.carousel-container .track {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+.carousel-container .card-container {
+  width: 250px;
+  flex-shrink: 0;
+  height: 280px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.carousel-container .card-container .card {
+  width: 100%;
+  height: 100%;
+  /* background:white ; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav .prev {
+  left: -7px;
+  display: none;
+}
+.nav .prev.show {
+  display: block;
+}
+
+.nav .next {
+  right: -7px;
+}
+.nav .next.hide {
+  display: none;
+}
+
+.card > * {
+  flex: 1;
+}
+.card .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+.card .info {
+  /* background: #333;
+    color: #fff; */
+  flex-basis: 40px;
+  flex-grow: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* +++++++++++++++++++++ only at sephora ++++++++++++++++++ */
+.sep_container1 {
+  width: auto;
+  display: flex;
+  padding: 10px;
+}
+.sep_container2 {
+  margin-top: 5px;
+  width: auto;
+  display: flex;
+  padding: 10px;
+}
+.sep_container1 .image-box-sep,
+.sep_container2 .image-box-sep {
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  margin: 5px;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid gainsboro;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sep_container1 .image-box-sep img,
+.sep_container2 .image-box-sep img {
+  width: 100%;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.sep_container1 .image-box-sep .card-body,
+.sep_container2 .image-box-sep .card-body {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* ++++++++++++++++++++ Trending +++++++++++++++++++ */
+.trends_container {
+  width: auto;
+  display: flex;
+  padding: 10px;
+}
+.trends_container .image-box-t {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px 5px;
+  float: left;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.trends_container .image-box-t img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+.trends_container .image-box-t .overlay {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(225, 219, 219, 0.5);
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+.trends_container .image-box-t .overlay b {
+  flex-basis: 40px;
+  flex-grow: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* +++++++++++++++++++++++++++++++++++++ Top Brands +++++++++++++++++++++++ */
+
+.Brands_container {
+  margin: 10px auto;
+  width: auto;
+  padding: 40px 0;
+  display: flex;
+  margin: 0 30px;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.Brands_container .image-box {
+  background: #fff;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 5px;
+  height: auto;
+  width: 150px;
+}
+.Brands_container .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
